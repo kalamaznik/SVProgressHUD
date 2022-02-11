@@ -402,11 +402,11 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         
 
         _backgroundColor = [UIColor whiteColor];
-        _foregroundColor = [UIColor blackColor];
+        _foregroundColor = [UIColor colorWithRed:227/255 green:25/255 blue:55/255 alpha:0.8];
         _backgroundLayerColor = [UIColor colorWithWhite:0 alpha:0.4];
         
         // Set default values
-        _defaultMaskType = SVProgressHUDMaskTypeNone;
+        _defaultMaskType = SVProgressHUDMaskTypeBlack;
         _defaultStyle = SVProgressHUDStyleLight;
         _defaultAnimationType = SVProgressHUDAnimationTypeFlat;
         _minimumSize = CGSizeZero;
@@ -423,7 +423,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _successImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"success" ofType:@"png"]];
         _errorImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"error" ofType:@"png"]];
 
-        _ringThickness = 2.0f;
+        _ringThickness = 3.0f;
         _ringRadius = 18.0f;
         _ringNoTextRadius = 24.0f;
         
